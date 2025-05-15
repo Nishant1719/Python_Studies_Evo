@@ -1,7 +1,40 @@
 Type Python in terminal 
     -Typically use Open Integrated Terminal option to open terminal
+    -While importing python shell search current directory first for any imports.
     -To Terminate Python Shell Used CTRL + D.
 Uses:
     -To try and test small snippets of codes
     -Testing
     
+Terminal Examples :
+Step 1 : PS C:\Users\Nishant\Desktop\Study\Python\01_Basics> python
+    Python 3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+>>> for c in "Nishant":
+...     print(c)
+...     
+N
+i
+s
+h
+a
+n
+t
+>>> import hello_world
+Hello World!
+--------------------------
+//Mistake
+>>> display("Nishant")
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    display("Nishant")
+    ^^^^^^^
+NameError: name 'display' is not defined
+
+//Correction
+>>> hello_world.display(345345)
+345345
+--------------------------
+>>> import hello_world as hw
+>>> hw.display("Nishant")
+Nishant
