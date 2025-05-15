@@ -38,3 +38,22 @@ NameError: name 'display' is not defined
 >>> import hello_world as hw
 >>> hw.display("Nishant")
 Nishant
+
+--------------------------
+Error :
+AttributeError: module 'hello_world' has no attribute 'Fav_Game'
+    -Occurs because as i have introduced the attribute after importing the hello_world File
+
+Sol: Run this command
+from importlib import reload
+>>> reload(hello_world)
+Hello World!
+<module 'hello_world' from 'C:\\Users\\Nishant\\Desktop\\Study\\Python\\01_Basics\\hello_world.py'>
+>>> print(hw.Fav_Game) // hw still works in this case as i have named it earlier than reload
+GOW2
+
+Can do this also :
+>>> reload(hw) // reloading as the name passed
+Hello World!
+<module 'hello_world' from 'C:\\Users\\Nishant\\Desktop\\Study\\Python\\01_Basics\\hello_world.py'>
+>>> 
