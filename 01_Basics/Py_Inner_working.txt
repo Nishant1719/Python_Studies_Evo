@@ -1,0 +1,17 @@
+Python inner working 
+
+> python hello_world.py
+    -code ==> byte code (mostly hidden) (.pyc file) ==> PythonVM 
+
+1: Compile down (Intermeatary step) to Byte Code 
+    -Low level code (Not Machine Code) & platform independent
+    
+    Byte Code:
+        -Runs faster
+        -.pyc -> Compiled python (frozen binaries)
+    __pycache__:
+        -source change & python version
+            -hello_world.cpython-313.pyc
+        -Works only for imported files
+        -not for top level files
+        
