@@ -1,0 +1,7 @@
+Type Python in terminal 
+    -Typically use Open Integrated Terminal option to open terminal
+    -To Terminate Python Shell Used CTRL + D.
+Uses:
+    -To try and test small snippets of codes
+    -Testing
+    
