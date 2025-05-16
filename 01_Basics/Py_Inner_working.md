@@ -27,4 +27,4 @@
 
 - # Byte Code is not Machine Code
     - Python specifice Interpretation
-    - cpython (standard Implementation),jythin,Iron Python, Stackless,PyPy
+    - cpython (standard Implementation),jythin,Iron Python, Stackless,PyPy 
