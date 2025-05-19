@@ -188,3 +188,11 @@
   a = random.choice([1, 2, 3, 4, 5])
   print(a) # Random element from the list
   ```
+  - random.shuffle(seq): Shuffles the sequence seq in place.
+  Example:
+  ```python
+  import random
+  a = [1, 2, 3, 4, 5]
+  random.shuffle(a)
+  print(a) # Shuffled list
+  ```
