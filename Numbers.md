@@ -100,7 +100,7 @@
   print(c) # '0xa'
   print(d) # '0b1010'
   ```
-  - # int(x, base): (Alternative to oct, hex, bin)
+  - # int(x, base): (Alternative to oct, hex, bin methods)
     - Converts x to an integer in the given base.
     - Example:
     ```python
@@ -114,3 +114,28 @@
     b = int(a, 2)
     print(b) # 10
     ```
+
+- # Bitwise Operators:
+  - & (AND): Returns 1 if both bits are 1, otherwise returns 0.
+  - | (OR): Returns 1 if at least one bit is 1, otherwise returns 0.
+  - ^ (XOR): Returns 1 if the bits are different, otherwise returns 0.
+  - ~ (NOT): Inverts the bits.
+  - << (Left Shift): Shifts the bits to the left by the given number of positions.
+  - >> (Right Shift): Shifts the bits to the right by the given number of positions.
+  - Example:
+  ```python
+  a = 10 # 1010 in binary
+  b = 4  # 0100 in binary
+  c = a & b
+  d = a | b
+  e = a ^ b
+  f = ~a
+  g = a << 1
+  h = a >> 1
+  print(c) # 0
+  print(d) # 14
+  print(e) # 14
+  print(f) # -11
+  print(g) # 20
+  print(h) # 5
+  ```
