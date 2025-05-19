@@ -26,3 +26,9 @@
     a == b # True
     ```
     
+- type() : Used to check the type of the object.
+    Example:
+    ```python
+    a = [1, 2, 3]
+    print(type(a)) # <class 'list'>
+    ```

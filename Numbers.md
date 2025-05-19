@@ -173,7 +173,7 @@
     0	      1
     1	      0
   
-- # Random: (Easy implementation)
+- # Random: (Easy implementations)
   - random.randint(a, b): Returns a random integer between a and b (inclusive).
   Example:
   ```python
@@ -195,4 +195,121 @@
   a = [1, 2, 3, 4, 5]
   random.shuffle(a)
   print(a) # Shuffled list
+  ```
+- # Decimal: (For precise decimal arithmetic processing)
+  - decimal.Decimal(x): Creates a Decimal object from x.
+  - decimal.getcontext(): Returns the current context for decimal operations.
+  - decimal.setcontext(context): Sets the context for decimal operations.
+  - Example:
+  ```python
+  from decimal import Decimal, getcontext, setcontext
+  a = Decimal('0.1')
+  b = Decimal('0.2')
+  c = a + b
+  print(c) # 0.3
+  ```
+  Precision Problem:
+  ```python
+  a = 0.1
+  b = 0.2
+  c = 0.3
+  z = a + b + c - 0.3
+  print(z) # 5.551115123125783e-17
+
+  Solution:
+  from decimal import Decimal
+  a = Decimal('0.1')
+  b = Decimal('0.2')
+  c = Decimal('0.3')
+  z = a + b + c - Decimal('0.3')
+  print(z) # 0
+  ```
+
+- # Fraction: (For precise fraction arithmetic processing)
+  - fractions.Fraction(x): Creates a Fraction object from x.
+  - fractions.gcd(a, b): Returns the greatest common divisor of a and b.
+  - Example:
+  ```python
+  from fractions import Fraction
+  a = Fraction(1, 3)
+  b = Fraction(1, 6)
+  c = a + b
+  print(c) # 1/2
+  ```
+- # Set:
+  - set(): Creates a set object.
+  - frozenset(): Creates an immutable set object.
+  - Example:
+  ```python
+  a = {1, 2, 3}
+  b = frozenset({1, 2, 3})
+  print(a) # {1, 2, 3}
+  print(b) # frozenset({1, 2, 3})
+  ```
+  Example for Union:
+  ```python
+  a = {1, 2, 3}
+  b = {3, 4, 5}
+  c = a | b
+  print(c) # {1, 2, 3, 4, 5}
+  ```
+  Example for Intersection:
+  ```python
+  a = {1, 2, 3}
+  b = {3, 4, 5}
+  c = a & b
+  print(c) # {3} 
+  ```
+  Example for Difference:
+  ```python
+  a = {1, 2, 3}
+  b = {3, 4, 5}
+  c = a - b
+  print(c) # {1, 2}
+  ```
+  Example for Symmetric Difference:
+  ```python
+  a = {1, 2, 3}
+  b = {3, 4, 5}
+  c = a ^ b
+  print(c) # {1, 2, 4, 5}
+  ```
+  Example for Subset:
+  ```python
+  a = {1, 2}
+  b = {1, 2, 3}
+  print(a <= b) # True
+  print(b <= a) # False
+  ```
+  Example for Superset:
+  ```python
+  a = {1, 2}
+  b = {1, 2, 3}
+  print(a >= b) # False
+  print(b >= a) # True
+  ```
+  Example for Disjoint:
+  ```python
+  a = {1, 2}
+  b = {3, 4}
+  print(a.isdisjoint(b)) # True
+  ``` 
+  Example for Copy:
+  ```python
+  a = {1, 2, 3}
+  b = a.copy()
+  print(b) # {1, 2, 3}
+  ```
+- # Boolean:
+  Example:
+  ```python
+  True == 1 # True
+  False == 0 # True
+
+  True is 1 # False
+  False is 0 # False
+
+  3 + True # 4
+  5 + False # 5
+    - Because True is 1 and False is 0
   ```
