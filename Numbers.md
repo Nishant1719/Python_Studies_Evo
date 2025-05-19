@@ -173,3 +173,18 @@
     0	      1
     1	      0
   
+- # Random: (Easy implementation)
+  - random.randint(a, b): Returns a random integer between a and b (inclusive).
+  Example:
+  ```python
+  import random
+  a = random.randint(1, 10)
+  print(a) # Random integer between 1 and 10
+  ```
+  - random.choice(seq): Returns a random element from the non-empty sequence seq.
+  Example:
+  ```python
+  import random
+  a = random.choice([1, 2, 3, 4, 5])
+  print(a) # Random element from the list
+  ```
