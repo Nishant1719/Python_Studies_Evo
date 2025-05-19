@@ -48,7 +48,7 @@
   print(str(b)) # 'Hello'
   print(b) # Hello
   ```
-- Boolean Operators:
+- # Boolean Operators:
   - and: Returns True if both operands are True.
   - or: Returns True if at least one operand is True.
   - not: Returns True if the operand is False, and vice versa.
@@ -65,5 +65,52 @@
   print(e) # False
   ```
 
-
-    
+- # Libraries :
+  - math: Provides mathematical functions and constants.
+    - math.floor(x): Returns the largest integer less than or equal to x.
+    Example:
+    ```python
+    import math
+    a = 5.7
+    b = math.floor(a)
+    print(b) # 5
+    ```
+    - math.trunc(x): Returns the integer part of x. Towards zero.
+    Example:
+    ```python
+    import math
+    a = 5.7
+    b = math.trunc(a)
+    print(b) # 5
+    ```
+- # octal, hex, bin:
+  - oct(x): Converts x to octal string.
+    - octal is a base-8 number system that uses digits 0-7.
+  - hex(x): Converts x to hexadecimal string.
+    - hexadecimal is a base-16 number system that uses digits 0-9 and letters A-F.
+  - bin(x): Converts x to binary string.
+    - binary is a base-2 number system that uses digits 0 and 1.
+  - Example:
+  ```python
+  a = 10
+  b = oct(a)
+  c = hex(a)
+  d = bin(a)
+  print(b) # '0o12'
+  print(c) # '0xa'
+  print(d) # '0b1010'
+  ```
+  - # int(x, base): (Alternative to oct, hex, bin)
+    - Converts x to an integer in the given base.
+    - Example:
+    ```python
+    a = '0o12'
+    b = int(a, 8)
+    print(b) # 10
+    a = '0xa'
+    b = int(a, 16)
+    print(b) # 10
+    a = '0b1010'
+    b = int(a, 2)
+    print(b) # 10
+    ```
