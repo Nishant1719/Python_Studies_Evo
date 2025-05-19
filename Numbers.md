@@ -126,12 +126,12 @@
   ```python
   a = 10 # 1010 in binary
   b = 4  # 0100 in binary
-  c = a & b
-  d = a | b
-  e = a ^ b
-  f = ~a
-  g = a << 1
-  h = a >> 1
+  c = a & b # check if both bits are 1.
+  d = a | b # check if at least one bit is 1.
+  e = a ^ b # check if the bits are different.
+  f = ~a # invert the bits.
+  g = a << 1 # basically operation happens like a * 2 ^ n , Where n is the number of positions
+  h = a >> 1 # basically operation happens like a // 2 ^ n , Where n is the number of positions
   print(c) # 0
   print(d) # 14
   print(e) # 14
@@ -139,3 +139,37 @@
   print(g) # 20
   print(h) # 5
   ```
+  - # Bitwise Table :
+  | Operator | Description |
+  |----------|-------------|
+  | &        | AND         |
+  | \|      | OR          |
+  | ^        | XOR        |
+  | ~        | NOT        |
+  | <<       | Left Shift  |
+  | >>       | Right Shift |
+
+  - # Bitwise short-hand table:
+  1. AND (&) — Bitwise AND
+    Bit A	  Bit B	  A & B (AND)
+    0	      0	      0
+    0	      1	      0
+    1	      0	      0
+    1	      1	      1
+  2. OR (|) — Bitwise OR
+    Bit A	  Bit B	  A | B (OR)
+    0	      0	      0
+    0	      1	      1
+    1	      0	      1
+    1	      1	      1
+  3. XOR (^) — Bitwise XOR
+    Bit A	  Bit B	  A ^ B (XOR)
+    0	      0	      0
+    0	      1	      1
+    1	      0	      1
+    1	      1	      0
+  4. NOT (~) — Bitwise NOT
+    Bit A	  ~A (NOT)
+    0	      1
+    1	      0
+  
