@@ -98,4 +98,29 @@
     print(Games) # ['AC2', 'GOWR', 'DMC5', 'GTA5']
     print(Games_copy) # ['AC3', 'GOWR', 'DMC5', 'GTA5']
     ```
-    
+- # List Comprehension: 
+    - List comprehension is a concise way to create lists in Python. It allows you to generate a new list by applying an expression to each item in an existing iterable (like a list, tuple, or string) and optionally filtering the items based on a condition.
+    - Example:
+    ```python
+    myGames = ["AC2","GOWR","DMC5","GTA5"]
+    myGames_upper = [game.lower() for game in myGames] # This will create a new list with all elements in lowercase
+    print(myGames_upper) # Output: ['ac2', 'gowr', 'dmc5', 'gta5']
+    ```
+    - Example:
+    ```python
+    squares = [x**2 for x in range(10)] # This will create a list of squares from 0 to 9
+    print(squares) # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    ```
+- # Range() function:
+    - The `range()` function generates a sequence of numbers. It can take one, two, or three arguments: start, stop, and step. The start argument is inclusive, while the stop argument is exclusive.
+    - Example:
+    ```python
+    myGames = ["AC2","GOWR","DMC5","GTA5"]
+    for i in range(len(myGames)):
+        print(myGames[i]) # This will print each element in the list
+    ```
+    - Example:
+    ```python
+    Qubes = [x**3 for x in range(10)] # This will create a list of cubes from 0 to 9
+    print(Qubes) # Output: [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
+    ```
