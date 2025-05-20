@@ -69,3 +69,33 @@
     myGames.insert(3,"AC1") # This will insert "AC1" at index 3
     print(myGames) # Output: ['AC2', 'AC3', 'GOWR', 'AC1', 'DMC5', 'GTA5']
     ```
+- # copy() : Interview Question
+    - The `copy()` method creates a shallow copy of the list. This means that it creates a new list object, but the elements inside the list are still references to the original objects. If you modify the copied list, it will not affect the original list.
+    Example:
+    ```python
+    a = [1, 2, 3]
+    b = a.copy()
+    b[0] = 4
+    print(a) # [1, 2, 3]
+    print(b) # [4, 2, 3]
+    ```
+    - Problem:
+    ```python
+    Games = ["AC2", "GOWR", "DMC5", "GTA5"]
+    Games_copy = Games # Copying the list but not creating a new object in the memory.
+    # It has the same reference as the original list.
+    # so if we change the copied list, it will also change the original list.
+    Games_copy[0] = "AC3"
+    print(Games) # ['AC3', 'GOWR', 'DMC5', 'GTA5']
+    print(Games_copy) # ['AC3', 'GOWR', 'DMC5', 'GTA5']
+    ```
+    - Solution:
+    ```python
+    Games = ["AC2", "GOWR", "DMC5", "GTA5"]
+    Games_copy = Games.copy() # Copying the list and creating a new object in the memory.
+    # Now if we change the copied list, it will not change the original list.
+    Games_copy[0] = "AC3"
+    print(Games) # ['AC2', 'GOWR', 'DMC5', 'GTA5']
+    print(Games_copy) # ['AC3', 'GOWR', 'DMC5', 'GTA5']
+    ```
+    
