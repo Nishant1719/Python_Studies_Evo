@@ -167,6 +167,29 @@ print(new_games.game)
 MyGames.set_game = "PUBG" # This will not work because set_game is an instance variable, not a class variable.
 print(new_games.game) # Output: PUBG
 
+# print(isinstance(new_games, MyGames)) # This will return True because MyGames is a class that inherits from the object class also from car Object.
+# print(isinstance(XUV700, MyGames)) # This will return False because XUV700 is an instance of the Car class, not MyGames.
+# print(isinstance(XUV700, Car)) # This will return True because XUV700 is an instance of the Car class.
+# print(isinstance(my_BE6, Car)) # This will return True because my_BE6 is an instance of the Car class.
+
+# Multiple Inheritance:
+class A:
+    def __init__(self):
+        print("Class A")
+
+class B:
+    def __init__(self):
+        print("Class B")
+
+class C(A, B):
+    def __init__(self):
+        super().__init__() # This will call the constructor of class A Why A only? 
+        #  Why A only? Answer: Because A is the first class in the inheritance list.
+        B.__init__(self) # This will call the constructor of class B
+        print("Class C")
+
+multi = C() 
+
 
 # Notes:
 # 1. Class variables are shared across all instances of the class.
