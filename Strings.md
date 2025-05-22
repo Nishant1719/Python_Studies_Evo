@@ -11,7 +11,15 @@
     my_string = "Hello, World!"
     print(my_string[::2])   # Output: Hlo ol!
     ```
-
+    Example with negative step:
+    ```python
+    my_string = "Hello, World!"
+    print(my_string[::-1])  # Output: !dlroW ,olleH
+    ```
+    Explanation:
+    - The first example `my_string[::2]` extracts every second character from the string, starting from index 0.
+    - The second example `my_string[::-1]` reverses the string by using a negative step.
+    
 - # strip : Web-development Practices
   - The `strip()` method is used to remove leading and trailing whitespace characters from a string.
   - Example:
