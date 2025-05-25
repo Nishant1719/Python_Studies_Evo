@@ -9,4 +9,3 @@ for char in input_string:
         break
     
 print(result_Str)
-# print(input_string.count('i'))
