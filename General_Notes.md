@@ -45,3 +45,11 @@
         print(Games[i], end="-") # AC2-GOWR-DMC5-GTA5-
     ```
 
+- Always Use paranthesis is multiple conditional statements.
+    - # why?
+    - Because it makes the code more readable and avoids confusion.
+    Example:
+    ```python
+    if (a == 1 and b == 2) or (c == 3 and d == 4):
+        print("True")
+    ```
