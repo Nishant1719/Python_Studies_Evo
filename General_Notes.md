@@ -53,7 +53,13 @@
     if (a == 1 and b == 2) or (c == 3 and d == 4):
         print("True")
     ```
-
+- # not operator : Used to negate the condition.
+    - Example:
+    ```python
+    if not (a == 1):
+        print("a is not equal to 1")
+    ```
+    
 # Very Important for DSA :
 - # URL:
     - https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
