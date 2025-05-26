@@ -53,3 +53,7 @@
     if (a == 1 and b == 2) or (c == 3 and d == 4):
         print("True")
     ```
+
+# Very Important for DSA :
+- # URL:
+    - https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
