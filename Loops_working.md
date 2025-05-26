@@ -30,3 +30,4 @@
     - `StopIteration` exception
 
 
+- # URL : https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
