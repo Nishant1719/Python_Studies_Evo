@@ -2,19 +2,10 @@
 # my sol: from for loop
 num = int(input("Enter the number: "))
 
-# result = num 
-# for n in range(num):
-#     if (num - 1) != 0:
-#         result = result * (num - 1)
-#         num-=1
-# print(result)
-
 # While loop
-
-result = num
-while num>1:
-     if (num - 1) != 0:
-        result = result * (num - 1)
-        num -= 1
-
+result = 1
+while num > 0:
+    result = result * num
+    num-=1
+    
 print(result)
