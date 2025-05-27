@@ -39,4 +39,9 @@
     print(next(my_iter))  # Output: 2
     print(next(my_iter))  # Output: 3
     ```
+    
+- # What is an Iterator and iterable?
+    - An **iterator** is an object that implements the iterator protocol, which consists of the methods `__iter__()` and `__next__()`.
+    - An **iterable** is any object that can return its members one at a time, and it must implement the `__iter__()` method.
+
 - # URL : https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
