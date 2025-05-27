@@ -8,3 +8,7 @@
 cube = lambda x: x ** 3 
 # print(cube) # Stores memory address.
 print(cube(3)) # Prints values.
+
+# Why lambda?
+# Ans : Because it is a nameless function and we can use it in places where we don't need to reuse the function.
+# also it is a one-liner function.
