@@ -72,3 +72,15 @@
 - # URL:
     - https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
 
+# Django:
+    - # Factory functions or closure functions:
+        - Used to create a function that returns another function.
+        - Example:
+        ```python
+        def outer_function(x):
+            def inner_function(y):
+                return x + y
+            return inner_function
+        add_five = outer_function(5)
+        print(add_five(10)) # 15
+        ```
