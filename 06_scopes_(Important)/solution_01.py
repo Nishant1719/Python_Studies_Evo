@@ -32,8 +32,12 @@ myresult() # it will execute the f2 func.
 # Factory functions / closure functions 
 def main_func(num):
     def sub_func(x):
-        return x ** num # num : will be treated as global variable here
-    return sub_func
+        return x ** num # num : will be treated as global variable here / returns the x raised to the power of num.
+    return sub_func # This returns a function after executing the sub_func function.
+# This is a closure function, as it remembers the value of num even after main_func has finished executing.
+# why? Because sub_func is defined inside main_func and has access to its variables.
+# so ? it can use the value of num even after main_func has completed.
+# as sub_func is returned from main_func, it retains access to num. plus its not called yet.
 
 result = main_func(2)
 print(result(3)) # Output : It will be sqrt of 3 as per the func defination.
