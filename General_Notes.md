@@ -59,7 +59,16 @@
     if not (a == 1):
         print("a is not equal to 1")
     ```
+- # Named arguements : Used to pass the arguments to the function by name.
+    - Example:
+    ```python
+    def add(name1, name2):
+        return name1 + name2
+    print(add(name2=2, name1=1)) # 3
+    ```
+    - Even when the order of the arguments is changed, it will still work.
     
 # Very Important for DSA :
 - # URL:
     - https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
+
