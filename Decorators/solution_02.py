@@ -3,6 +3,10 @@
 # solution :
 def debug(func):
     def wrapper(*args, **kwargs):
+        args_value = ', '.join(str(arg) for arg in args)
+        kwargs_value = ', '.join(f"{k}={v}" for k,v in kwargs.items())
+        print(f"Arguments values: ",args_value)
+        print(f"Key-Value arguements: ",kwargs_value)
         print(f"Function Name : {func.__name__} & its arguments {args,kwargs}")
         return func(*args, **kwargs)
     return wrapper 
@@ -12,7 +16,6 @@ def greet(name,message,greeting="Hello"):
     return print(f"{name}, {greeting} Message : {message}")
     
 greet("Nishant",greeting="Namaste",message="Hi there people")
-
 # ------------------------------------------------------------------------------------
 # Examples with no arguements:
 # def debug_no_parameters(func):
