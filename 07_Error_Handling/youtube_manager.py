@@ -15,8 +15,11 @@ def save_data_helper(videos):
         json.dump(videos, file) # serialize
 
 def list_all_videos(videos):
+    print(f"\n")
     for index, video in enumerate(videos, start=1):
+        print(f"{'*' * 50}")
         print(f"{index} : {video['name']}, Duration: {video['time']}")
+    print(f"\n")
 
 def add_video(videos):
     video_name = input("Enter video name : ")
