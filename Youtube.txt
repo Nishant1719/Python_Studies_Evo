@@ -1,1 +1,1 @@
-No need of try block or closing the file mannualy
+[{"name": "Nishant Dancing", "time": "2 mins"}, {"name": "shreya drinking", "time": "45 mins"}]

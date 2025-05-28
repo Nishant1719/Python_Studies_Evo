@@ -72,7 +72,8 @@
 - # URL:
     - https://www.youtube.com/watch?v=_VxQ5jzo37o&list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&index=15
 
-# Django:
+# Django Important Notes:
+- # Decorators:
     - # Factory functions or closure functions:
         - Used to create a function that returns another function.
         - Example:
@@ -84,3 +85,35 @@
         add_five = outer_function(5)
         print(add_five(10)) # 15
         ```
+- # ennumerate() :
+    - Used to iterate over a list and get the index and value of the element.
+    - Example:
+    ```python
+    my_list = ["a", "b", "c"]
+    for index, value in enumerate(my_list):
+        print(index, value)
+    # Output:
+    # 0 a
+    # 1 b
+    # 2 c
+    ```
+- # zip() : 
+    - Used to combine two or more lists into a single list of tuples.
+    - Example:
+    ```python
+    list1 = [1, 2, 3]
+    list2 = ["a", "b", "c"]
+    zipped = zip(list1, list2)
+    print(list(zipped)) # [(1, 'a'), (2, 'b'), (3, 'c')]
+    ```
+- # map() :
+    - Used to apply a function to all the items in an iterable (like a list).
+    - Example:
+    ```python
+    def square(x):
+        return x * x
+    numbers = [1, 2, 3, 4]
+    squared_numbers = map(square, numbers)
+    print(list(squared_numbers)) # [1, 4, 9, 16]
+    ```
+
