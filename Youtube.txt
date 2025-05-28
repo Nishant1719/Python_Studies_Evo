@@ -1,0 +1,1 @@
+No need of try block or closing the file mannualy
