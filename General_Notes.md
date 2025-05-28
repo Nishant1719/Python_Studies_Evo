@@ -97,6 +97,22 @@
     # 1 b
     # 2 c
     ```
+    Example:
+    ```python
+    my_list = [{"name": "nishant", "time": "55 mins"}, {"name": "shreya", "time": "35 mins"}, {"name": "trainer", "time": "1 hours"}]
+    # emu_list = enumerate(my_list)
+    # for index, value in emu_list:
+        # print(index, value) # Output:
+        # 0 {'name': 'nishant', 'time': '55 mins'}
+        # 1 {'name': 'shreya', 'time': '35 mins'}
+        # 2 {'name': 'trainer', 'time': '1 hours'}
+    for index, value in enumerate(my_list, start=1):
+        print(f"{index}. {value['name']} - {value['time']}")
+    # Output:
+    # 1. nishant - 55 mins
+    # 2. shreya - 35 mins
+    # 3. trainer - 1 hours
+    ```
 - # zip() : 
     - Used to combine two or more lists into a single list of tuples.
     - Example:
