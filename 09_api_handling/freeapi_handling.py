@@ -16,13 +16,17 @@ def fetch_random_user():
         raise Exception("Failed to fetch user data!")
 
 def main():
-    data = fetch_random_user()
-    for i in data:
-        user = i['name']
-        country_item = i['location']
-        print(f"User : {user['first']} {user['last']} from {country_item['country']}")
-        # pass
+    try:
+        data = fetch_random_user()
+        for i in data:
+            user = i['name']
+            country_item = i['location']
+            print(f"User : {user['first']} {user['last']} from {country_item['country']}")
 
+    except Exception as e:
+        print("Error: ",e)
+    
+    
 if __name__ == "__main__":
     main()
 
