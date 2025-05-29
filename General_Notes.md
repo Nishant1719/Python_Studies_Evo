@@ -132,4 +132,16 @@
     squared_numbers = map(square, numbers)
     print(list(squared_numbers)) # [1, 4, 9, 16]
     ```
+- # virtualenv :
+    - A tool to create isolated Python environments.
+    # How to install virtualenv:
+    - `pip install virtualenv` : Installs the virtualenv package.
+    - # How to create a virtual environment:
+        - `python -m venv myenv` : Creates a new virtual environment named `myenv`.
+        - `source myenv/bin/activate` : Activates the virtual environment on Linux/Mac.
+        - `myenv\Scripts\activate` : Activates the virtual environment on Windows.
+    - # How to deactivate a virtual environment:
+        - `deactivate` : Deactivates the current virtual environment.
+    - # How to delete a virtual environment:
+        - Simply delete the folder containing the virtual environment.
 
